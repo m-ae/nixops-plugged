@@ -13,6 +13,7 @@
       "original": {
         "owner": "edolstra",
         "repo": "flake-compat",
+        "rev": "99f1c2157fba4bfe6211a321fd0ee43199025dbf",
         "type": "github"
       }
     },
@@ -33,17 +34,17 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1620252427,
-        "narHash": "sha256-U1Q5QceuT4chJTJ1UOt7bZOn9Y2o5/7w27RISjqXoQw=",
+        "lastModified": 1620254388,
+        "narHash": "sha256-6e7EXVhEkwWR7aeEjLZWfHY5IC/JT/jYJE4VFk9WyYw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d3ba49889a76539ea0f7d7285b203e7f81326ded",
+        "rev": "361bea3f007e2d3e31e185f6ae246357e4f19402",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable",
         "repo": "nixpkgs",
+        "rev": "361bea3f007e2d3e31e185f6ae246357e4f19402",
         "type": "github"
       }
     },
@@ -68,16 +69,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1620134685,
-        "narHash": "sha256-RzO4EBbF6HMHFNcf+/VVZL+jND30OC2UPzG0d9IUd9U=",
+        "lastModified": 1620696204,
+        "narHash": "sha256-u27dYVrTmISZpBEWF5XssvNZ1iGlSD0nqalkUMJzXhs=",
         "owner": "nix-community",
         "repo": "poetry2nix",
-        "rev": "6549bd9534f38c51010d24a7bebbb24492555c0f",
+        "rev": "2d27d44397242b28c3f0081e0432e4f6c951f3a1",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
         "repo": "poetry2nix",
+        "rev": "2d27d44397242b28c3f0081e0432e4f6c951f3a1",
         "type": "github"
       }
     },
@@ -91,16 +93,17 @@
     },
     "utils": {
       "locked": {
-        "lastModified": 1619345332,
-        "narHash": "sha256-qHnQkEp1uklKTpx3MvKtY6xzgcqXDsz5nLilbbuL+3A=",
+        "lastModified": 1620759905,
+        "narHash": "sha256-WiyWawrgmyN0EdmiHyG2V+fqReiVi8bM9cRdMaKQOFg=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "2ebf2558e5bf978c7fb8ea927dfaed8fefab2e28",
+        "rev": "b543720b25df6ffdfcf9227afafc5b8c1fabfae8",
         "type": "github"
       },
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "rev": "b543720b25df6ffdfcf9227afafc5b8c1fabfae8",
         "type": "github"
       }
     }
