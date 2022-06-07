@@ -1,22 +1,21 @@
 {
   description = "NixOps with several plugins installed.";
 
-  inputs.nixpkgs.url =
-    "github:NixOS/nixpkgs/361bea3f007e2d3e31e185f6ae246357e4f19402";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/361bea3f0";
 
   inputs.poetry2nix = {
     url =
-      "github:nix-community/poetry2nix/2d27d44397242b28c3f0081e0432e4f6c951f3a1";
+      "github:nix-community/poetry2nix/2d27d4439";
     inputs.nixpkgs.follows = "nixpkgs";
     inputs.flake-utils.follows = "flake-utils";
   };
 
   inputs.flake-utils.url =
-    "github:numtide/flake-utils/b543720b25df6ffdfcf9227afafc5b8c1fabfae8";
+    "github:numtide/flake-utils/b543720b2";
 
   inputs.flake-compat = {
     url =
-      "github:edolstra/flake-compat/99f1c2157fba4bfe6211a321fd0ee43199025dbf";
+      "github:edolstra/flake-compat/99f1c2157";
     flake = false;
   };
 
