@@ -4,10 +4,14 @@
   inputs.nixpkgs.url =
     "github:NixOS/nixpkgs/361bea3f007e2d3e31e185f6ae246357e4f19402";
 
-  inputs.poetry2nix.url =
-    "github:nix-community/poetry2nix/2d27d44397242b28c3f0081e0432e4f6c951f3a1";
+  inputs.poetry2nix = {
+    url =
+      "github:nix-community/poetry2nix/2d27d44397242b28c3f0081e0432e4f6c951f3a1";
+    inputs.nixpkgs.follows = "nixpkgs";
+    inputs.flake-utils.follows = "flake-utils";
+  };
 
-  inputs.utils.url =
+  inputs.flake-utils.url =
     "github:numtide/flake-utils/b543720b25df6ffdfcf9227afafc5b8c1fabfae8";
 
   inputs.flake-compat = {
@@ -16,8 +20,8 @@
     flake = false;
   };
 
-  outputs = { self, flake-compat, nixpkgs, poetry2nix, utils, ... }:
-    utils.lib.eachDefaultSystem (system:
+  outputs = { self, flake-compat, nixpkgs, poetry2nix, flake-utils, ... }:
+    flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {
           inherit system;
